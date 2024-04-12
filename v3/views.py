@@ -72,7 +72,7 @@ def uploadFile(request):
 
 
         # 동영상 파일 경로
-        folder_path = "C:/Users/jmw08/Desktop/pp/v1/media"
+        folder_path = "media"
 
         # 저장할 이미지 폴더 경로
         output_folder = "frame_split/squat/squat_co"
@@ -158,8 +158,8 @@ def uploadFile(request):
                         ["RKnee", "RAnkle"], ["Chest", "LHip"], ["LHip", "LKnee"], ["LKnee", "LAnkle"] ]
 
         # 각 파일 path
-        protoFile = "C:/Users/jmw08/Desktop/pp/pose_deploy_linevec_faster_4_stages.prototxt"
-        weightsFile = "C:/Users/jmw08/Desktop/pp/pose_iter_160000.caffemodel"
+        protoFile = "pose_deploy_linevec_faster_4_stages.prototxt"
+        weightsFile = "pose_iter_160000.caffemodel"
 
         # 위의 path에 있는 network 불러오기
         net = cv2.dnn.readNetFromCaffe(protoFile, weightsFile)
@@ -170,7 +170,7 @@ def uploadFile(request):
 
         ##### 프레임별로 포인트, 선 그리고 각도 계산
         # 이미지 파일이 있는 폴더 경로
-        folder_path = "C:/Users/jmw08/Desktop/pp/v1/frame_split/squat/squat_co"
+        folder_path = "frame_split/squat/squat_co"
 
         # 폴더 내의 모든 파일 가져오기
         file_list = os.listdir(folder_path)

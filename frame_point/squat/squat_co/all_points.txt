@@ -1,0 +1,17 @@
+Image Path: C:/Users/jmw08/Desktop/pp/v1/frame_split/squat/squat_co\squat_test_frame_0.jpg
+Point 0: (520, 112)
+Point 1: (536, 136)
+Point 2: (544, 144)
+Point 3: (528, 176)
+Point 4: (504, 152)
+Point 5: (544, 144)
+Point 6: (528, 112)
+Point 7: (528, 120)
+Point 8: (1120, 144)
+Point 9: (856, 568)
+Point 10: (832, 616)
+Point 11: (584, 176)
+Point 12: (624, 480)
+Point 13: None
+Point 14: (560, 160)
+

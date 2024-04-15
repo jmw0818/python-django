@@ -15,6 +15,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends gcc
 
 RUN apt-get update
 RUN apt-get -y install libgl1-mesa-glx
+RUN apt-get update && apt-get install libgl1-mesa-glx -y
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6 -y
+
 
 COPY ./Pipfile* ./
 RUN if [-f "./Pipfile.lock"] || [ -f "./Pipfile" ]; then PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy; fi
